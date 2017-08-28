@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById(R.id.request_button).setOnClickListener {
+        findViewById<Button>(R.id.request_button).setOnClickListener{  //type needs to be written
             val service = ServiceVolley()
             val apiController = APIController(service)
 
